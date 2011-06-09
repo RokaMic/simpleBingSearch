@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head>
+    <title>Boo: Search and Preview</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <script type="text/javascript">
+	  function loadResults(form) {
+		  var query = form.txtQuery.value;
+		  window.location.replace("file:///C:/Users/RokaMic/websites/boo-search/search.html?txtQuery=" + query);
+	  }
+	</script>
+
+<body>
+	<form name="searchForm" action="" method="get">
+      <input type="text" name="txtQuery" size="40" maxlength="256" value="a" />
+      <input type="button" name="button" value="Search" onclick="loadResults(this.form)" />
+    </form>
+</body>
+</html>
